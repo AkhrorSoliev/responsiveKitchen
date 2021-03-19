@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right top, #ff3aaa, #e23fb7, #c147c1, #9c4dc6, #7152c7, #944ec3, #b149bb, #ca44b2, #ff4889, #ff7857, #ffb422, #ebee23);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 50px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.nav {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    text-align: center;
+    
+}
+
+.nav a {
+    text-decoration: none;
+    background-color: #ffc600;
+    padding: 10px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.sadebar {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "goodImg goodImg price1"
+        "goodImg goodImg price2"
+    ;
+}
+
+.goodImg {
+    grid-area: goodImg;
+    min-height: 400px;
+    background: url('../images/bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+
+.price1 {
+    grid-area: price1;
+    background-color: #ffc600;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.price2 {
+    grid-area: price2;
+    background-color: #ffc600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sadebar h1 {
+    background-color: #ffc600;
+    padding: 5px;
+}
+
+.sadebar span {
+    background-color: #ffc600;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+.number {
+    font-size: 70px;
+    font-weight: 300 !important;
+}
+
+
+.price1 p {
+    font-weight: bold;
+}
+
+.price2 p {
+    font-weight: bold;
+}
+
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.boxes img {
+    width: 50px;
+    height: 50px;
+}
+
+.boxes div {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.boxes p {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.ads {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    background-color: #fff;
+    padding: 50px;
+    align-items: center;
+    line-height: 2;
+}
+
+.ads a {
+    color: #000;
+    background-color: #ffc600;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ads-text h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ads-text p {
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em black, 0 0 0.2em black;
+}
+
+.galerey {
+    text-align: center;
+}
+
+.galereyImg {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        text-align: center;
+        grid-template-areas: 
+            "a1 a2"
+            "a3 a4"
+            "a5 ."
+        ;
+        
+    }
+    
+    .nav a {
+        text-decoration: none;
+        background-color: #ffc600;
+        padding: 10px;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .a1 {
+        grid-area: a1;
+    }
+
+    .a2 {
+        grid-area: a2;
+    }
+
+    .a3 {
+        grid-area: a3;
+    }
+
+    .a4 {
+        grid-area: a4;
+    }
+
+    .a5 {
+        grid-area: a5;
+    }
+
+    .sadebar {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+            "goodImg goodImg"
+            "price1  price2"
+        ;
+    }
+    
+    .goodImg {
+        grid-area: goodImg;
+        min-height: 400px;
+        background: url('../images/bg1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px;
+    }
+    
+    
+    .price1 {
+        grid-area: price1;
+        background-color: #ffc600;
+        display: flex;   
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .price2 {
+        grid-area: price2;
+        background-color: #ffc600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .sadebar h1 {
+        background-color: #ffc600;
+        padding: 5px;
+    }
+    
+    .sadebar span {
+        background-color: #ffc600;
+        font-weight: bold;
+        padding: 5px;
+    }
+    
+    
+    .number {
+        font-size: 70px;
+        font-weight: 300 !important;
+    }
+    
+    
+    .price1 p {
+        font-weight: bold;
+    }
+    
+    .price2 p {
+        font-weight: bold;
+    }
+
+    .ads {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        background-color: #fff;
+        padding: 50px;
+        align-items: center;
+        line-height: 2;
+        grid-template-areas:
+            "tacosImg"
+            "tacos-text"
+        ;
+
+    }
+
+    .ads img {
+        grid-area: tacosImg;
+    }
+
+    .ads-text {
+        grid-area: tacos-text;
+    }
+    
+    .ads a {
+        color: #000;
+        background-color: #ffc600;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .ads-text h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .ads-text p {
+        text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em black, 0 0 0.2em black;
+    }
+
+
+    
+}
+
+@media (max-width: 500px) {
+    .nav {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        text-align: center;
+        grid-template-areas: 
+            "a1"
+            "a2"
+            "a3"
+            "a4"
+            "a5"
+        ;
+        
+    }
+    
+    .nav a {
+        text-decoration: none;
+        background-color: #ffc600;
+        padding: 10px;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .a1 {
+        grid-area: a1;
+    }
+
+    .a2 {
+        grid-area: a2;
+    }
+
+    .a3 {
+        grid-area: a3;
+    }
+
+    .a4 {
+        grid-area: a4;
+    }
+
+    .a5 {
+        grid-area: a5;
+    }
+
+    .galereyImg {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        
+    }
+
+    .galereyImg img {
+        min-width: 100%;
+    }
+
+
+
+    
+}
