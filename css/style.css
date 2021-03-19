@@ -45,10 +45,10 @@ body {
 .goodImg {
     grid-area: goodImg;
     min-height: 400px;
-    background: url('../images/bg1.jpg');
+    background: url('https://source.unsplash.com/1600x400/?kitchen,kitchenware');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     flex-direction: column;
     justify-content: center;
